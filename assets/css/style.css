@@ -1,0 +1,117 @@
+body {
+  font-family: Raleway, sans-serif;
+  background: #f6f8fd;
+  padding-top: 150px;
+}
+
+#service {
+  padding-top: 200px;
+}
+
+
+.bg-nav {
+  background-color: #f6f8fd;
+}
+
+.mt--2 {
+  margin-top: -0.5rem !important;
+}
+
+.hr-dotted {
+  border-top: 1px dotted;
+  opacity: .25;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #212529 !important;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.4s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #0d6efd !important;
+}
+
+.feature-icon-1 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  font-size: 3rem;
+  color: #fff;
+  border-radius: 100%;
+}
+
+.btn-social-media {
+  color: #31316a;
+  background-color: #cdcfdf;
+  border-color: #cdcfdf;
+  width: 2rem;
+  height: 2rem;
+  padding: 1.2rem;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+.btn-social-media:hover {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+/* Footer */
+.footer .copyright a {
+  color: #ee5050;
+  text-decoration: none;
+}
+
+.footer .copyright a:hover {
+  color: #eb2d2d;
+}
+
+.footer .link a {
+  color: #212529;
+  text-decoration: none;
+}
+
+.footer .link a:hover {
+  color: #0d6efd;
+}
+
+.modal-content {
+  border-radius: 12px; /* Membuat modal lebih rounded */
+  background-color: #fff;
+}
+
+.modal-header {
+  border-bottom: none; /* Menghilangkan garis di header */
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal img {
+  border-radius: 10px; /* Agar gambar di dalam modal juga membulat */
+  max-height: 400px; /* Batasi tinggi gambar agar tetap proporsional */
+  width: auto;
+}
+.portfolio-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.portfolio-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.portfolio-item img {
+  transition: transform 0.3s ease;
+}
+.portfolio-item:hover img {
+  transform: scale(1.1);
+}
+
