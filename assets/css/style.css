@@ -115,3 +115,37 @@ body {
   transform: scale(1.1);
 }
 
+/* Responsif untuk modal */
+.modal-dialog {
+  max-width: 90%;
+  width: auto;
+}
+
+/* Atur ukuran modal untuk layar kecil */
+@media (max-width: 768px) {
+  .modal-content {
+      padding: 10px;
+  }
+
+  #portfolioImage {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .modal-body {
+      font-size: 14px;
+  }
+}
+
+/* Responsif untuk layar lebih kecil dari 480px */
+@media (max-width: 480px) {
+  .modal-dialog {
+      max-width: 95%;
+  }
+
+  .modal-body {
+      font-size: 13px;
+  }
+}
+
+
