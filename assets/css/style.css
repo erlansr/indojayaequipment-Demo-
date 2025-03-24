@@ -1,11 +1,6 @@
 body {
   font-family: Raleway, sans-serif;
   background: #f6f8fd;
-  
-}
-
-#service {
-  padding-top: 200px;
 }
 
 .bg-nav {
@@ -82,7 +77,6 @@ body {
   color: #0d6efd;
 }
 
-/* Modal Styles */
 .modal-content {
   border-radius: 12px; /* Membuat modal lebih rounded */
   background-color: #fff;
@@ -94,114 +88,10 @@ body {
 
 .modal-body {
   padding: 20px;
-  position: relative;
 }
 
 .modal img {
   border-radius: 10px; /* Agar gambar di dalam modal juga membulat */
   max-height: 400px; /* Batasi tinggi gambar agar tetap proporsional */
   width: auto;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  cursor: zoom-in;
-}
-
-.modal img.zoomed {
-  transform: scale(1.5);
-  cursor: zoom-out;
-}
-
-/* Hindari background modal yang terlalu gelap */
-.modal-backdrop.show {
-  background: rgba(0, 0, 0, 0.2) !important; /* Lebih terang */
-}
-
-/* Efek hover di portfolio */
-.portfolio-item {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.portfolio-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-.portfolio-item img {
-  transition: transform 0.3s ease;
-}
-.portfolio-item:hover img {
-  transform: scale(1.1);
-}
-
-/* Responsif untuk modal */
-.modal-dialog {
-  max-width: 90%;
-  width: auto;
-}
-
-/* Atur ukuran modal untuk layar kecil */
-@media (max-width: 768px) {
-  .modal-content {
-      padding: 10px;
-  }
-
-  #portfolioImage {
-      max-width: 100%;
-      height: auto;
-  }
-
-  .modal-body {
-      font-size: 14px;
-  }
-
-  /* Kurangi zoom di layar kecil agar tetap pas */
-  .modal img.zoomed {
-      transform: scale(1.3);
-  }
-}
-
-/* Responsif untuk layar lebih kecil dari 480px */
-@media (max-width: 480px) {
-  .modal-dialog {
-      max-width: 95%;
-  }
-
-  .modal-body {
-      font-size: 13px;
-  }
-}
-
-/* Container khusus untuk gambar zoom */
-.zoom-container {
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-}
-
-/* Logo ukuran normal di desktop */
-.brand-logo {
-  width: 70px;   /* Logo sesuai keinginan di desktop */
-  height: auto;
-}
-
-/* Teks brand ukuran normal di desktop */
-.brand-text {
-  font-size: 1.25rem; /* ~20px, sesuai keinginan */
-}
-
-/* Pastikan navbar tidak terlalu lebar */
-.navbar {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-/* Responsif di layar kecil (max-width: 576px) */
-@media (max-width: 576px) {
-  .brand-logo {
-    width: 50px;  /* Perkecil logo agar pas di layar HP */
-  }
-  .brand-text {
-    font-size: 1rem; /* Perkecil font brand agar tidak melebar */
-  }
-  .navbar {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
 }
