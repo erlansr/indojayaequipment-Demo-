@@ -75,6 +75,9 @@
                     <a href="https://www.instagram.com/ijekaroseri/?igsh=MXI0NmQwb2t5YmswNg%3D%3D#" target="_blank" class="btn btn-social-media me-3">
                         <i class="bi bi-instagram"></i>
                     </a>
+                    <a href="https://api.whatsapp.com/send?phone=6281219221135&text=Halo%21%20Saya%20ingin%20menanyakan%20informasi%20lebih%20lanjut%20tentang%20layanan%2Fproduk%20Anda.%20Bisa%20dibantu%3Fhttps://www.instagram.com/ijekaroseri/?igsh=MXI0NmQwb2t5YmswNg%3D%3D#" target="_blank" class="btn btn-social-media me-3">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
                     
                     
                 </div>
@@ -105,7 +108,7 @@
         <div id="services" class="container text-center py-5 mt-9">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h3 class="fw-bold lh-2 mb-3">OUR LAYANAN</h3>
+                    <h3 class="fw-bold lh-2 mb-3">LAYANAN KAMI</h3>
                     <p class="lead">Kami menawarkan berbagai layanan karoseri berkualitas untuk memenuhi kebutuhan kendaraan anda</p>
                 </div>
             </div>
@@ -117,8 +120,8 @@
                             <div class="feature-icon-1 bg-primary bg-gradient mb-4">
                                 <i class="bi-truck"></i>
                             </div>
-                            <h3>Pembuatan Karoseri</h3>
-                            <p>Desain dan pembuatan karoseri sesuai spesifikasi, mulai dari kendaraan niaga, logistik dan lain - lain ----------------  --------------------------------------------------------------------------</p>
+                            <h3>Pembuatan <br>Karoseri</h3>
+                            <p>Desain dan pembuatan karoseri sesuai spesifikasi, mulai dari kendaraan niaga, logistik dan lain - lainya</p>
                         </div>
                     </div>
                 </div>
@@ -194,7 +197,7 @@
 <div id="portfolio" class="container text-center py-5">
     <div class="row">
         <div class="col-lg-8 mx-auto">
-            <h3 class="fw-bold lh-2 mb-3">OUR PRODUK</h3>
+            <h3 class="fw-bold lh-2 mb-3"> PRODUK KAMI </h3>
             <p class="lead"> Berikut Produk yang kami Tawarkan
         </div>
     </div>
@@ -547,7 +550,9 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body text-center">
-                <img id="portfolioImage" src="" alt="Portfolio Image" class="img-fluid rounded-3 mb-3">
+                <div class="zoom-container">
+                    <img id="portfolioImage" src="" alt="Portfolio Image" class="img-fluid rounded-3 mb-3 zoomable">
+                </div>
                 <p id="portfolioDescription" class="text-muted"></p>
                 
                 <!-- Tombol Hubungi Saya -->
@@ -564,16 +569,12 @@
     </div>
 </div>
 
-
-
-
-
         <!-- Contact -->
         <div id="contact" class="container text-center pt-4 pb-5">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h3 class="fw-bold lh-2 mb-3">HUBUNGI KAMI</h3>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+                    <p class="lead">Jika Anda memiliki pertanyaan atau ingin menghubungi kami, jangan ragu untuk menghubungi tim kami. Kami siap membantu Anda dengan informasi yang dibutuhkan.</p>
                 </div>
             </div>
 
@@ -646,38 +647,30 @@
 
 
     <script>
-       function togglePortfolio() {
-    let morePortfolio = document.getElementById('morePortfolio');
-    let viewAllBtn = document.getElementById('viewAllBtn');
-
-    if (morePortfolio.style.display === 'none' || morePortfolio.style.display === '') {
-        morePortfolio.style.display = 'block';
-        viewAllBtn.textContent = 'Show Less';
-    } else {
-        morePortfolio.style.display = 'none';
-        viewAllBtn.textContent = 'View All';
-    }
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-    let portfolioItems = document.querySelectorAll(".portfolio-item-img");
-
-    portfolioItems.forEach(item => {
-        item.addEventListener("click", function () {
-            let title = this.getAttribute("data-title");
-            let description = this.getAttribute("data-description");
-            let image = this.getAttribute("data-image");
-            let whatsappLink = this.getAttribute("data-whatsapp");
-
-            document.getElementById("portfolioModalLabel").innerText = title;
-            document.getElementById("portfolioDescription").innerText = description;
-            document.getElementById("portfolioImage").src = image;
-            document.getElementById("contactButton").href = whatsappLink || "#";
+        document.addEventListener("DOMContentLoaded", function () {
+            let portfolioItems = document.querySelectorAll(".portfolio-item-img");
+        
+            portfolioItems.forEach(item => {
+                item.addEventListener("click", function () {
+                    let title = this.getAttribute("data-title");
+                    let description = this.getAttribute("data-description");
+                    let image = this.getAttribute("data-image");
+                    let whatsappLink = this.getAttribute("data-whatsapp");
+        
+                    document.getElementById("portfolioModalLabel").innerText = title;
+                    document.getElementById("portfolioDescription").innerText = description;
+                    document.getElementById("portfolioImage").src = image;
+                    document.getElementById("contactButton").href = whatsappLink || "#";
+                });
+            });
+        
+            // Zoom-in & Zoom-out effect
+            let portfolioImage = document.getElementById("portfolioImage");
+            portfolioImage.addEventListener("click", function () {
+                this.classList.toggle("zoomed");
+            });
         });
-    });
-});
-
-    </script>
+        </script>
 
     <!-- Popper and Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
