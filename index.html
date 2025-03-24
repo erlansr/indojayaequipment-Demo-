@@ -40,50 +40,54 @@
 
 <body id="home" class="d-flex flex-column h-100">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light py-4 bg-nav fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light py-3 bg-nav fixed-top">
         <div class="container">
             <!-- Brand -->
-            <a class="navbar-brand" href="">
-                <img src="assets/img/LOGO INDOJAYA-Photoroom.png" alt="Indo Jaya Equiment" width="70" height="60" class="d-inline-block mt--2 me-2">
-                <span class="text-body fs-4 fw-bolder">PT. Indo Jaya Equipment</span>
+            <a class="navbar-brand d-flex align-items-center" href="">
+                <img src="assets/img/LOGO INDOJAYA-Photoroom.png" alt="Indo Jaya Equipment" class="brand-logo me-2" style="max-height: 50px;">
+                <span class="brand-text text-body fw-bolder mb-0">PT. Indo Jaya Equipment</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            
+            <!-- Toggler Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse py-3 py-lg-1" id="navbarSupportedContent">
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <!-- Menu -->
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav mx-auto text-center">
                     <li class="nav-item">
-                        <a class="nav-link mx-3" href="#home">Beranda</a>
+                        <a class="nav-link mx-2" href="#home">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-3" href="#services">Layanan</a>
+                        <a class="nav-link mx-2" href="#services">Layanan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-3" href="#about">Tentang</a>
+                        <a class="nav-link mx-2" href="#about">Tentang</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-3" href="#portfolio">Produk</a>
+                        <a class="nav-link mx-2" href="#portfolio">Produk</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-3" href="#contact">Kontak</a>
+                        <a class="nav-link mx-2" href="#contact">Kontak</a>
                     </li>
                 </ul>
+                
                 <!-- Social Media -->
-                <div class="d-flex mt-3 ms-3 mt-md-0 ms-md-0">
-                    
-                    <a href="https://www.instagram.com/ijekaroseri/?igsh=MXI0NmQwb2t5YmswNg%3D%3D#" target="_blank" class="btn btn-social-media me-3">
+                <div class="d-flex justify-content-center mt-3 mt-lg-0">
+                    <a href="https://www.instagram.com/ijekaroseri/" target="_blank" class="btn btn-social-media me-2">
                         <i class="bi bi-instagram"></i>
                     </a>
-                    <a href="https://api.whatsapp.com/send?phone=6281219221135&text=Halo%21%20Saya%20ingin%20menanyakan%20informasi%20lebih%20lanjut%20tentang%20layanan%2Fproduk%20Anda.%20Bisa%20dibantu%3Fhttps://www.instagram.com/ijekaroseri/?igsh=MXI0NmQwb2t5YmswNg%3D%3D#" target="_blank" class="btn btn-social-media me-3">
+                    <a href="https://api.whatsapp.com/send?phone=6281219221135&text=Halo%21%20Saya%20ingin%20menanyakan%20informasi%20lebih%20lanjut%20tentang%20layanan%2Fproduk%20Anda.%20Bisa%20dibantu%3F" target="_blank" class="btn btn-social-media">
                         <i class="bi bi-whatsapp"></i>
                     </a>
-                    
-                    
                 </div>
             </div>
         </div>
     </nav>
+</body>
+
 
     <!-- Main Content -->
     <main class="flex-shrink-0">
@@ -544,30 +548,30 @@
 <!-- Modal -->
 <div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content rounded-4 shadow-lg">
-            <div class="modal-header border-0">
-                <h5 class="modal-title fw-bold" id="portfolioModalLabel"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body text-center">
-                <div class="zoom-container">
-                    <img id="portfolioImage" src="" alt="Portfolio Image" class="img-fluid rounded-3 mb-3 zoomable">
-                </div>
-                <p id="portfolioDescription" class="text-muted"></p>
-                
-                <!-- Tombol Hubungi Saya -->
-                <a id="contactButton" href="#" class="btn btn-primary mt-3" target="_blank">Hubungi Saya</a>
-                
-                <!-- Social Media Links -->
-                <div class="d-flex justify-content-center mt-4">
-                    <a href="https://www.instagram.com/ijekaroseri" target="_blank" class="btn btn-social-media me-3">
-                        <i class="bi bi-instagram fs-4"></i>
-                    </a>
-                </div>
-            </div>
+      <div class="modal-content rounded-4 shadow-lg">
+        <div class="modal-header border-0">
+          <h5 class="modal-title fw-bold" id="portfolioModalLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body text-center">
+          <div class="zoom-container">
+            <img id="portfolioImage" src="" alt="Portfolio Image" class="img-fluid rounded-3 mb-3 zoomable">
+          </div>
+          <p id="portfolioDescription" class="text-muted"></p>
+          
+          <!-- Tombol Hubungi Saya -->
+          <a id="contactButton" href="#" class="btn btn-primary mt-3" target="_blank">Hubungi Saya</a>
+          
+          <!-- Social Media Links -->
+          <div class="d-flex justify-content-center mt-4">
+            <a href="https://www.instagram.com/ijekaroseri" target="_blank" class="btn btn-social-media me-3">
+              <i class="bi bi-instagram fs-4"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 
         <!-- Contact -->
         <div id="contact" class="container text-center pt-4 pb-5">
@@ -645,32 +649,47 @@
         </div>
     </footer>
 
-
     <script>
+        // Toggle untuk menampilkan portfolio tambahan
+        function togglePortfolio() {
+          let morePortfolio = document.getElementById('morePortfolio');
+          let viewAllBtn = document.getElementById('viewAllBtn');
+        
+          if (morePortfolio.style.display === 'none' || morePortfolio.style.display === '') {
+              morePortfolio.style.display = 'block';
+              viewAllBtn.textContent = 'Show Less';
+          } else {
+              morePortfolio.style.display = 'none';
+              viewAllBtn.textContent = 'View All';
+          }
+        }
+        
         document.addEventListener("DOMContentLoaded", function () {
-            let portfolioItems = document.querySelectorAll(".portfolio-item-img");
+          // Set up untuk modal portfolio
+          let portfolioItems = document.querySelectorAll(".portfolio-item-img");
         
-            portfolioItems.forEach(item => {
-                item.addEventListener("click", function () {
-                    let title = this.getAttribute("data-title");
-                    let description = this.getAttribute("data-description");
-                    let image = this.getAttribute("data-image");
-                    let whatsappLink = this.getAttribute("data-whatsapp");
+          portfolioItems.forEach(item => {
+            item.addEventListener("click", function () {
+              let title = this.getAttribute("data-title");
+              let description = this.getAttribute("data-description");
+              let image = this.getAttribute("data-image");
+              let whatsappLink = this.getAttribute("data-whatsapp");
         
-                    document.getElementById("portfolioModalLabel").innerText = title;
-                    document.getElementById("portfolioDescription").innerText = description;
-                    document.getElementById("portfolioImage").src = image;
-                    document.getElementById("contactButton").href = whatsappLink || "#";
-                });
+              document.getElementById("portfolioModalLabel").innerText = title;
+              document.getElementById("portfolioDescription").innerText = description;
+              document.getElementById("portfolioImage").src = image;
+              document.getElementById("contactButton").href = whatsappLink || "#";
             });
+          });
         
-            // Zoom-in & Zoom-out effect
-            let portfolioImage = document.getElementById("portfolioImage");
-            portfolioImage.addEventListener("click", function () {
-                this.classList.toggle("zoomed");
-            });
+          // Efek zoom pada gambar modal
+          let portfolioImage = document.getElementById("portfolioImage");
+          portfolioImage.addEventListener("click", function () {
+            this.classList.toggle("zoomed");
+          });
         });
         </script>
+        
 
     <!-- Popper and Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>

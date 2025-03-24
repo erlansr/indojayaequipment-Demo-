@@ -8,7 +8,6 @@ body {
   padding-top: 200px;
 }
 
-
 .bg-nav {
   background-color: #f6f8fd;
 }
@@ -82,6 +81,8 @@ body {
 .footer .link a:hover {
   color: #0d6efd;
 }
+
+/* Modal Styles */
 .modal-content {
   border-radius: 12px; /* Membuat modal lebih rounded */
   background-color: #fff;
@@ -111,7 +112,7 @@ body {
 
 /* Hindari background modal yang terlalu gelap */
 .modal-backdrop.show {
-  background: rgba(0, 0, 0, 0.2) !important; /* Biar lebih terang */
+  background: rgba(0, 0, 0, 0.2) !important; /* Lebih terang */
 }
 
 /* Efek hover di portfolio */
@@ -164,5 +165,43 @@ body {
 
   .modal-body {
       font-size: 13px;
+  }
+}
+
+/* Container khusus untuk gambar zoom */
+.zoom-container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Logo ukuran normal di desktop */
+.brand-logo {
+  width: 70px;   /* Logo sesuai keinginan di desktop */
+  height: auto;
+}
+
+/* Teks brand ukuran normal di desktop */
+.brand-text {
+  font-size: 1.25rem; /* ~20px, sesuai keinginan */
+}
+
+/* Pastikan navbar tidak terlalu lebar */
+.navbar {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Responsif di layar kecil (max-width: 576px) */
+@media (max-width: 576px) {
+  .brand-logo {
+    width: 50px;  /* Perkecil logo agar pas di layar HP */
+  }
+  .brand-text {
+    font-size: 1rem; /* Perkecil font brand agar tidak melebar */
+  }
+  .navbar {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
