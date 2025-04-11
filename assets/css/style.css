@@ -1,7 +1,13 @@
 body {
   font-family: Raleway, sans-serif;
   background: #f6f8fd;
+  padding-top: 150px;
 }
+
+#service {
+  padding-top: 200px;
+}
+
 
 .bg-nav {
   background-color: #f6f8fd;
@@ -95,3 +101,51 @@ body {
   max-height: 400px; /* Batasi tinggi gambar agar tetap proporsional */
   width: auto;
 }
+.portfolio-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.portfolio-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.portfolio-item img {
+  transition: transform 0.3s ease;
+}
+.portfolio-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Responsif untuk modal */
+.modal-dialog {
+  max-width: 90%;
+  width: auto;
+}
+
+/* Atur ukuran modal untuk layar kecil */
+@media (max-width: 768px) {
+  .modal-content {
+      padding: 10px;
+  }
+
+  #portfolioImage {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .modal-body {
+      font-size: 14px;
+  }
+}
+
+/* Responsif untuk layar lebih kecil dari 480px */
+@media (max-width: 480px) {
+  .modal-dialog {
+      max-width: 95%;
+  }
+
+  .modal-body {
+      font-size: 13px;
+  }
+}
+
+
